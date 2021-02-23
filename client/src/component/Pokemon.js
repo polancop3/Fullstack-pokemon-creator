@@ -61,7 +61,7 @@ class Pokemon extends React.Component {
     render() {
         return (
             <div>
-               {this.state.pokedex &&  this.state.pokedex.map(poke=><li key={ poke.id }> Name:{poke.name} Type: {poke.type} Level:{poke.level} Ability: {poke.ability}<button onClick = {this.handleDelete}>delete</button></li>)}
+               {this.state.pokedex &&  this.state.pokedex.map(poke=><li key={ poke.id }> Name:{poke.name} Type: {poke.type} Level:{poke.level} Ability: {poke.ability}<button onClick = {()=>this.handleDelete(poke.id)}>delete</button></li>)}
 
 
                <form 
