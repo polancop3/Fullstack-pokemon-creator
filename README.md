@@ -7,4 +7,5 @@ add any pokemon you want
      <li>React<li/>
        <li>Axios<li/>
       <ul/>
+
 ![image](https://github.com/polancop3/Fullstack-pokemon-creator/blob/master/wireframe.png)
