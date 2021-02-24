@@ -61,10 +61,10 @@ class Pokemon extends React.Component {
     render() {
         return (
             <div>
-               {this.state.pokedex &&  this.state.pokedex.map(poke=><li key={ poke.id }> Name:{poke.name} Type: {poke.type} Level:{poke.level} Ability: {poke.ability}<button onClick = {()=>this.handleDelete(poke.id)}>delete</button></li>)}
-
-
-               <form 
+              <div id="text"><h1>Create Your Pokemon</h1></div>
+              
+              <div id="pokemon-container">
+               <form
                onChange={this.handleChange}
                onSubmit={this.handleSubmit}
                >
@@ -80,7 +80,11 @@ class Pokemon extends React.Component {
                 </label>
                 <input id="submit" type="submit"/>
                </form>
+               </div>
+                <div id="list"> {this.state.pokedex &&  this.state.pokedex.map(poke=><li key={ poke.id }> Name:{poke.name} Type: {poke.type} Level:{poke.level} Ability: {poke.ability}<button onClick = {()=>this.handleDelete(poke.id)}>delete</button></li>)}</div>
+
             </div>
+            
         )
     }
 }

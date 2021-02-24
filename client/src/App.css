@@ -15,3 +15,18 @@ form {
 label,input{
   width: 90%;
 }
+#pokemon-container{
+  display: flex;
+  justify-content: center;
+}
+
+#list{
+  display: flex;
+  flex-direction: column;
+  border: black solid 2px;
+  width: fit-content;
+}
+#text{
+  display: flex;
+  justify-content: center;
+}
