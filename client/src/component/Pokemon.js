@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-const url = "https://floating-tor-71053.herokuapp.com/pokemon";
+const url = "https://floating-tor-71053.herokuapp.com/pokemon/";
 
 class Pokemon extends React.Component {
         constructor(props){
